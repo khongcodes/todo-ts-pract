@@ -1,0 +1,14 @@
+$small-media-size: 600px;
+$medium-media-size: 900px;
+
+@mixin small-media {
+  @media (max-width: $small-media-size) {
+    @content;
+  }
+}
+
+@mixin medium-media {
+  @media (max-width: $medium-media-size) {
+    @content;
+  }
+}
