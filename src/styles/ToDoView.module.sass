@@ -30,6 +30,12 @@
   width: 100%
   height: 90%
 
+
+@keyframes fade-in 
+  from {opacity: 0; top: -10px}
+  to {opacity: 1; top: 0px}
+
+
 .taskContainer
   background-color: white
   width: 90%
@@ -40,13 +46,17 @@
   box-sizing: border-box
   margin: 1rem auto
   padding: 0.5rem
-  // align-content: center
+
+  position: relative
+  animation-name: fade-in;
+  animation-duration: 0.2s;
 
   &:first-of-type
     margin-top: 0.25rem
   
   & > *
     align-self: center
+
 
 .taskContainerDone
   @extend .taskContainer
@@ -62,9 +72,6 @@
     &:hover
       background-color: $gray
       color: black
-
-  
-  
   
 .taskNameInput
   height: 1.5rem
