@@ -4,11 +4,12 @@
 
 $gray: #c2c2c2;
 $dark-gray: scale-color($gray, $lightness: -30);
-$light-gray: scale-color($gray, $lightness: 30);
+$light-gray: scale-color($gray, $lightness: 50);
 
-$baby-blue: rgb(31, 173, 255)
+$baby-blue: rgb(31, 173, 255);
+$baby-baby-blue: scale-color($baby-blue, $lightness: 90);
 
 ////////////////////////////
-////       GRID        ////
+////       TYPE        ////
 //////////////////////////
 

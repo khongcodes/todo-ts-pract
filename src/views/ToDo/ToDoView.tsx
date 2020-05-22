@@ -30,23 +30,27 @@ const RenderedTask: React.FC<RenderedTaskProp> = ({
   nameCallback, doneCallback, deleteCallback
 }) => {
   return (
-    <div>
-      <input 
+    <div className={todoStyles.taskContainer}>
+      <input
+        className={todoStyles.taskNameInput}
         type='text' 
         value={name}
+        placeholder='Add your task name here.'
         onChange={event => nameCallback(id, event)}
       />
 
       <input 
+        className={todoStyles.taskCheckBox}
         type='checkbox'
         checked={done} 
         onChange={() => doneCallback(id)}
       />
 
       <button
+        className={todoStyles.taskDeleteButton}
         onClick={() => deleteCallback(id)}
       >
-        x
+        X
       </button>
     </div>
   )
