@@ -9,6 +9,9 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => (
   <div className={layoutStyles.root}>
     {children}
+    <p className={layoutStyles.copyright}>
+      Kevin Hong, 2020
+    </p>
   </div>
 )
 

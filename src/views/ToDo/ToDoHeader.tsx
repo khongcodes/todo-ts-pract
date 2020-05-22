@@ -12,7 +12,7 @@ const ToDoHeader: React.FC = () => (
       </span>
       
       &nbsp;
-      <span>
+      <span className={headerStyles.bold}>
         |
       </span>
       &nbsp;

@@ -21,6 +21,10 @@
     
     &:first-child
       margin-right: 1.5rem
+    
+    &:hover
+      background-color: scale-color($baby-baby-blue, $lightness: 40)
+      border-color: $baby-baby-blue
 
 .listContainer
   width: 100%
@@ -37,12 +41,30 @@
   margin: 1rem auto
   padding: 0.5rem
   // align-content: center
-  
+
   &:first-of-type
     margin-top: 0.25rem
   
   & > *
     align-self: center
+
+.taskContainerDone
+  @extend .taskContainer
+  background-color: $gray
+  
+  input[type='text']
+    background-color: $gray
+    text-decoration: line-through
+    color: $darker-gray
+
+  button
+    background-color: $gray
+    &:hover
+      background-color: $gray
+      color: black
+
+  
+  
   
 .taskNameInput
   height: 1.5rem

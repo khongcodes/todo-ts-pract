@@ -30,7 +30,7 @@ const RenderedTask: React.FC<RenderedTaskProp> = ({
   nameCallback, doneCallback, deleteCallback
 }) => {
   return (
-    <div className={todoStyles.taskContainer}>
+    <div className={!done ? todoStyles.taskContainer : todoStyles.taskContainerDone} >
       <input
         className={todoStyles.taskNameInput}
         type='text' 
